@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Events Micro Consultants | Ushering & Event Connections - Kampala</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C5A02D;--black:#101010;--light:#FFFBF0;--gray:#666}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:var(--light);color:var(--black)}
+header{background:var(--black);color:white;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:20px;color:var(--gold);line-height:1.1} .logo span{color:white;font-size:12px;display:block;font-family:'Poppins',sans-serif;letter-spacing:2px;font-weight:300}
+nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px}
+.btn{background:var(--gold);color:black;padding:12px 26px;border:none;border-radius:30px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.hero{padding:70px 5%;display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center;background:radial-gradient(circle at 30% 30%, #222, #000)}
+.hero h1{color:white;font-size:42px;line-height:1.15;font-family:'Playfair Display',serif} .hero h1 span{color:var(--gold)}
+.hero p{color:#ccc;margin:15px 0 25px}
+.card{background:white;border-radius:16px;padding:22px;box-shadow:0 8px 25px rgba(0,0,0,0.07)}
+section{padding:60px 5%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.provider-card{border:1px solid #eee;border-left:4px solid var(--gold);transition:0.3s}
+.provider-card:hover{transform:translateY(-6px)}
+.price{color:var(--gold);font-weight:700;margin-top:10px}
+.badge{background:var(--black);color:var(--gold);font-size:11px;padding:4px 10px;border-radius:20px;display:inline-block;margin-bottom:8px}
+form input,form select,form textarea{width:100%;padding:13px;margin:8px 0;border-radius:10px;border:1px solid #ddd;font-size:14px}
+footer{background:var(--black);color:white;text-align:center;padding:35px 5%;margin-top:40px}
+@media(max-width:768px){.hero{grid-template-columns:1fr}.hero h1{font-size:30px} header nav{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ELITE EVENTS <span>MICRO CONSULTANTS</span></div>
+  <nav>
+    <a href="#services">Ushering</a>
+    <a href="#providers">Partner Network</a>
+    <a href="#book">Book</a>
+  </nav>
+  <a href="#book" class="btn">Book Now</a>
+</header>
+
+<div class="hero">
+  <div>
+    <div class="badge">KAMPALA'S TRUSTED USHERING AGENCY</div>
+    <h1>Elegant <span>Ushering</span> Service That Elevates Your Event</h1>
+    <p>Elite Events Micro Consultants provides trained, beautiful & professional student ushers for Weddings, Kwanjulas, Corporate Events. Plus, we connect you instantly to verified Caterers, Decorators, MCs & more — one call, full event sorted.</p>
+    <a href="#book" class="btn">Get a Free Quote</a> 
+    <a href="#providers" class="btn" style="background:white;margin-left:10px">See Partners</a>
+    <p style="margin-top:15px;color:var(--gold);font-size:13px">✔ Trained Ushers ✔ English & Luganda ✔ Time Keeping</p>
+  </div>
+  <div class="card">
+    <h3 style="font-family:'Playfair Display',serif">Quick Availability Check</h3>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:10px">We reply in 30 mins on WhatsApp</p>
+    <form onsubmit="checkAvail(); return false;">
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="WhatsApp Number" required>
+      <select required><option value="">Event Type</option><option>Wedding</option><option>Introduction / Kwanjula</option><option>Corporate / Conference</option><option>Birthday / Private Party</option></select>
+      <input type="date" required>
+      <input type="number" placeholder="No. of Ushers Needed e.g. 8" required>
+      <button class="btn" style="width:100%;margin-top:10px">Check Availability</button>
+    </form>
+  </div>
+</div>
+
+<section id="services">
+  <h2 style="font-family:'Playfair Display',serif">Our Ushering Packages</h2>
+  <p style="color:var(--gray);margin-bottom:20px">Micro-consulting means we give you exactly what your event needs — no extra cost.</p>
+  <div class="grid">
+    <div class="card"><h4>Starter - 4 Elite Ushers</h4><p style="font-size:13px;color:var(--gray)">For small functions, birthdays & meetings. Includes uniform & welcoming.</p><p class="price"></p></div>
+    <div class="card" style="border:2px solid var(--gold);transform:scale(1.02)"><h4>Elite Signature - 8 Ushers ⭐</h4><p style="font-size:13px;color:var(--gray)">Best for Weddings & Kwanjulas. Supervisor + gifts table + guest guidance.</p><p class="price"></p><small style="color:green">Most Booked</small></div>
+    <div class="card"><h4>Executive - 15+ Ushers</h4><p style="font-size:13px;color:var(--gray)">Corporate conferences, expos, VIP protocol officers.</p><p class="price">Custom Quote</p></div>
+  </div>
+</section>
+
+<section id="providers" style="background:white">
+  <h2 style="font-family:'Playfair Display',serif">We Connect You To Other Service Providers</h2>
+  <p style="color:var(--gray);margin-bottom:25px">Elite Events Micro Consultants is your one-stop hub. Book ushers and get connected to our trusted network.</p>
+  <div class="grid">
+    <div class="card provider-card"><h4>🎂 Catering & Cake</h4><p style="font-size:13px">Food, buffet, cakes, drinks</p><p style="font-size:12px">Verified providers </p><button class="btn" style="margin-top:12px;padding:7px 18px;font-size:12px" onclick="connectService('Catering')">Connect Me</button></div>
+    <div class="card provider-card"><h4>🎤 MC, DJ & Sound</h4><p style="font-size:13px">Professional MCs, DJs, PA system</p><p style="font-size:12px"></p><button class="btn" style="margin-top:12px;padding:7px 18px;font-size:12px" onclick="connectService('MC & DJ')">Connect Me</button></div>
+    <div class="card provider-card"><h4>💐 Decor, Tents & Chairs</h4><p style="font-size:13px">Stage, backdrop, lighting, tents</p><p style="font-size:12px"></p><button class="btn" style="margin-top:12px;padding:7px 18px;font-size:12px" onclick="connectService('Decor & Tents')">Connect Me</button></div>
+    <div class="card provider-card"><h4>📸 Photo & Video</h4><p style="font-size:13px">Photography, videography, drone</p><p style="font-size:12px"></p><button class="btn" style="margin-top:12px;padding:7px 18px;font-size:12px" onclick="connectService('Photography')">Connect Me</button></div>
+    <div class="card provider-card"><h4>🚗 Transport & Protocol</h4><p style="font-size:13px">Bouncers, ushers cars, VIP cars</p><p style="font-size:12px">On request</p><button class="btn" style="margin-top:12px;padding:7px 18px;font-size:12px" onclick="connectService('Security & Transport')">Connect Me</button></div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="card" style="max-width:750px;margin:auto">
+    <h2 style="font-family:'Playfair Display',serif">Book Elite Events Micro Consultants</h2>
+    <p style="color:var(--gray)">One form to book ushers + all other services. We will call you back.</p>
+    <form id="fullForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="tel" id="phone" placeholder="WhatsApp Number e.g. 070000000" required>
+      <input type="text" id="location" placeholder="Event Venue e.g. Hotel Africana, Kampala" required>
+      <input type="date" id="date" required>
+      <label style="font-size:13px;font-weight:600">What do you need? (Select multiple)</label>
+      <select id="need" multiple style="height:110px" required>
+        <option>Elite Ushers Only</option>
+        <option>Ushers + Catering</option>
+        <option>Ushers + Decor & Tents</option>
+        <option>Ushers + MC & DJ</option>
+        <option>Ushers + Photography</option>
+        <option>Full Event Management (All Services)</option>
+      </select>
+      <small>Hold Ctrl (or tap multiple on phone) to select many</small>
+      <textarea id="msg" rows="4" placeholder="Tell us about your event, guests number, etc..."></textarea>
+      <button type="submit" class="btn" style="width:100%">Send Request via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <h3 style="color:var(--gold);font-family:'Playfair Display',serif">ELITE EVENTS MICRO CONSULTANTS</h3>
+  <p style="margin-top:10px">Professional Ushering | Event Staffing | Service Provider Connections</p>
+  <p style="margin-top:10px"> Kyambogo University Kampala, Uganda | Call/WhatsApp: 0709643362</p>
+  <p>Instagram: @eliteevents.ug | Email: eliteevents.ug@gmail.com</p>
+  <p style="font-size:11px;color:#777;margin-top:20px">© 2026 Elite Events Micro Consultants. We make your event elite.</p>
+</footer>
+
+<script>
+function connectService(service){
+  document.getElementById('book').scrollIntoView({behavior:'smooth'});
+  alert('You selected '+service+'. Please fill the full booking form below - we will connect you to a verified '+service+' provider.');
+}
+function checkAvail(){ alert('Thank you! Elite Events Micro Consultants will check availability and WhatsApp you shortly.'); }
+document.getElementById('fullForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  let name=document.getElementById('name').value;
+  let phone=document.getElementById('phone').value;
+  let loc=document.getElementById('location').value;
+  let date=document.getElementById('date').value;
+  let need=document.getElementById('need').selectedOptions;
+  let needs = Array.from(need).map(o=>o.value).join(', ');
+  let msg=document.getElementById('msg').value;
+  let text=`Hello ELITE EVENTS MICRO CONSULTANTS!%0A%0A*New Booking Request*%0AName: ${name}%0APhone: ${phone}%0AVenue: ${loc}%0ADate: ${date}%0AServices Needed: ${needs}%0ADetails: ${msg}`;
+  window.open('https://wa.me/256709643362?text='+text, '_blank');
+});
+</script>
+</body>
